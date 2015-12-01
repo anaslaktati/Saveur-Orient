@@ -2,7 +2,7 @@
 ul.MenuBarHorizontal
 {
 	margin: 0;
-	margin-left: 10em;
+	margin-left: 2em;
 	padding: 0;
 	list-style-type: none;
 	font-size: 100%;
@@ -24,7 +24,7 @@ ul.MenuBarHorizontal li
 	position: relative;
 	text-align: left;
 	cursor: pointer;
-	width: 10em;
+	width: 14em;
 	float: left;
 }
 /* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
@@ -48,7 +48,7 @@ ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
 /* Menu item containers are same fixed width as parent */
 ul.MenuBarHorizontal ul li
 {
-	width: 8.2em;
+	width: 14em;
 }
 /* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
 ul.MenuBarHorizontal ul ul
@@ -69,32 +69,29 @@ ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
 
  *******************************************************************************/
 
-/* Submenu containers have borders on all sides */
-ul.MenuBarHorizontal ul
-{
-	border: 1px solid #CCC;
-}
+
+
 /* Menu items are a light gray block with padding and no text decoration */
 ul.MenuBarHorizontal a
 {
 	display: block;
 	cursor: pointer;
-	background-color: #EEE;
+	background-color: #F4B350;
 	padding: 0.5em 0.75em;
-	color: #333;
+	color: black;
 	text-decoration: none;
 }
 /* Menu items that have mouse over or focus have a blue background and white text */
 ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
 {
-	background-color: #33C;
-	color: #FFF;
+	background-color: #e74c3c;
+	color: black;
 }
 /* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
 ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
 {
-	background-color: #33C;
-	color: #FFF;
+	background-color: #e74c3c;
+	color: black;
 }
 
 /*******************************************************************************
